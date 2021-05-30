@@ -7,7 +7,7 @@ namespace Team_software_project
         static void Main(string[] args)
         {
             Console.WriteLine("What do you want to do? [list, quit]");
-            string[] animals = { "0 - bear", "1 - cat", "2 - dog", "3 - bird", "4 - wolf", "5 - tiger", "6 - elephent" };
+            string[] animals = { "0 - bear", "1 - cat", "2 - dog", "3 - bird", "4 - wolf", "5 - tiger", "6 - elephant" };
             string answer = Console.ReadLine();
             while (true)
             {
@@ -285,7 +285,7 @@ namespace Team_software_project
                     if (animal == 6)
                     {
                         int weight = 0;
-                        string name = "Elephent";
+                        string name = "Elephant";
                         while (true)
                         {
 
@@ -317,7 +317,7 @@ namespace Team_software_project
                             {
                                 Console.WriteLine("Give a name:");
                                 name = Console.ReadLine();
-                                Console.WriteLine("Elephent is now called " + name);
+                                Console.WriteLine("Elephant is now called " + name);
                             }
                         }
                     }

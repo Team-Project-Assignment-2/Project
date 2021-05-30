@@ -7,7 +7,7 @@ namespace Team_software_project
         static void Main(string[] args)
         {
             Console.WriteLine("What do you want to do? [list, quit]");
-            string[] animals = { "0 - bear", "1 - cat", "2 - dog", "3 - bird" };
+            string[] animals = { "0 - bear", "1 - cat", "2 - dog", "3 - bird", "6 - elephent" };
             string answer = Console.ReadLine();
             while (true)
             {
@@ -181,6 +181,46 @@ namespace Team_software_project
                                 Console.WriteLine("Give a name:");
                                 name = Console.ReadLine();
                                 Console.WriteLine("bird is now called " + name);
+                            }
+                        }
+                    }
+
+                    if (animal == 6)
+                    {
+                        int weight = 0;
+                        string name = "Elephent";
+                        while (true)
+                        {
+
+                            Console.WriteLine("What do you want to do? [Eat, MakeSound, ComeHere, GiveName, back, quit]");
+                            string action = Console.ReadLine();
+
+                            if (action == "back")
+                            {
+                                break;
+                            }
+                            if (action == "quit")
+                            {
+                                Environment.Exit(0);
+                            }
+                            if (action == "Eat")
+                            {
+                                weight++;
+                                Console.WriteLine(name + " eats, leaf 1 kg and weighs now " + weight + " kg");
+                            }
+                            if (action == "MakeSound")
+                            {
+                                Console.WriteLine("Trumpet");
+                            }
+                            if (action == "ComeHere")
+                            {
+                                Console.WriteLine(name + " Comes to you");
+                            }
+                            if (action == "GiveName")
+                            {
+                                Console.WriteLine("Give a name:");
+                                name = Console.ReadLine();
+                                Console.WriteLine("Elephent is now called " + name);
                             }
                         }
                     }

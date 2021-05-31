@@ -40,7 +40,7 @@ namespace Team_software_project
                                 while (true)
                                 {
                                     Console.WriteLine("");
-                                    Console.WriteLine("What do you want to do? [Eat, MakeSound, ComeHere, GiveName, back, quit]");
+                                    Console.WriteLine("What do you want to do? [Hunt, MakeSound, ComeHere, GiveName, back, quit]");
                                     string action = Console.ReadLine();
                                     try
                                     {
@@ -64,12 +64,7 @@ namespace Team_software_project
                                             {
                                                 Console.WriteLine("Hunt failed, " + name + " still weights " + weight + " kg");
                                             }
-                                        }
-                                        if (action == "Eat")
-                                        {
-                                            weight++;
-                                            Console.WriteLine(name + " eats, gains 1 kg and weighs now " + weight + " kg");
-                                        }
+                                        }                                       
                                         if (action == "MakeSound")
                                         {
                                             Console.WriteLine("Growl");
@@ -189,7 +184,7 @@ namespace Team_software_project
                                 while (true)
                                 {
                                     Console.WriteLine("");
-                                    Console.WriteLine("What do you want to do? [Eat, MakeSound, ComeHere, GiveName, back, quit]");
+                                    Console.WriteLine("What do you want to do? [Hunt, MakeSound, ComeHere, GiveName, back, quit]");
                                     string action = Console.ReadLine();
                                     try
                                     {
@@ -213,12 +208,7 @@ namespace Team_software_project
                                             {
                                                 Console.WriteLine("Hunt failed, " + name + " still weights " + weight + " kg");
                                             }
-                                        }
-                                        if (action == "Eat")
-                                        {
-                                            weight++;
-                                            Console.WriteLine(name + " eats, gains 1 kg and weighs now " + weight + " kg");
-                                        }
+                                        }                                       
                                         if (action == "MakeSound")
                                         {
                                             Console.WriteLine("Chirp");
@@ -372,7 +362,7 @@ namespace Team_software_project
                                         if (action == "Eat")
                                         {
                                             weight++;
-                                            Console.WriteLine(name + " eats, leaf 1 kg and weighs now " + weight + " kg");
+                                            Console.WriteLine(name + " eats, gains 1 kg and weighs now " + weight + " kg");
                                         }
                                         if (action == "MakeSound")
                                         {
